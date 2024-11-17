@@ -1,51 +1,50 @@
 +++
 date = '2024-11-18T00:17:52+02:00'
-slug = 'cum-sa-folosesti-templ-in-goravel'
-title = 'Cum să folosești Templ în Goravel'
-description = "Cum să folosești Templ în framework-ul Goravel"
-featured_image = "/images/templ-with-goravel.png"
-etichete = ["go", "goravel", "templ"]
-categorii = "Tutoriale"
+title = 'How to Use Templ With Goravel'
+description = 'How to use Templ with Goravel go framework'
+featured_image = 'templ-with-goravel.png'
+tags = ['go', 'goravel', 'templ']
+categories = 'Tutorials'
 +++
 
 
-## Instaleaza framework-ul si pluginuri
+## Install the framework and tools
 
-Primul pas este să instalăm [Goravel](https://goravel.dev/). Este un framework complet cu foarte multe funcții scris în Go pentru programatorii familiari cu framework-ul Laravel.
+First let's install [Goravel](https://goravel.dev/). It's a batteries included Go Web Framework for developers familiar with the Laravel Framework.
 
-Pașii din documentația [Getting started](https://github.com/goravel/docs/blob/master/getting-started/installation.md):
+Steps from [Getting started documentation](https://github.com/goravel/docs/blob/master/getting-started/installation.md):
 ```bash
-// Descarcă framework-ul
+// Download framework
 git clone https://github.com/goravel/goravel.git
 rm -rf goravel/.git*
 
-// Instalează dependențele
+// Install dependencies
 cd goravel
 go mod tidy
 
-// Crează fișierul .env
+// Create .env environment configuration file
 cp .env.example .env
 
-// Generează cheia aplicației
+// Generate application key
 go run . artisan key:generate
 ```
 
-Acum instalează [templ](https://templ.guide/quick-start/installation) pentru randare html și [air](https://github.com/cosmtrek/air?tab=readme-ov-file#installation) pentru hot reloading:
+Now install [templ](https://templ.guide/quick-start/installation) for html templates and [air](https://github.com/cosmtrek/air?tab=readme-ov-file#installation) for hot reloading:
 ```bash
 go install github.com/a-h/templ/cmd/templ@latest
 go install github.com/cosmtrek/air@latest
 ```
 
-## Configurare structură front-end
-(încă în lucru - voi actualiza tutorialul cu variabile globale și script push)
+## Configure a simple frontend template structure
+(work in progress - I will update with global variables and script push)
 
-&bull; În fișierul `/.gitignore` adaugă această linie: `*_templ.go`
+&bull; Add this line in your `/.gitignore` file: `*_templ.go`
 
-&bull; Șterge fișierul `resources/views/welcome.tmpl`
+&bull; Delete `resources/views/welcome.tmpl`
 
-&bull; Creează 2 foldere în `resources/views/` cu numele `home` și `parts`
+&bull; Create 2 folders in `resources/views`, `home` and `parts`
 
-&bull; În folderul `resources/views/parts/` creează 3 fișiere:
+&bull; In the folder `resources/views/parts` create 3 files:
 
 &nbsp;&nbsp; 1. `resources/views/parts/header.templ`
 ```go
@@ -89,7 +88,7 @@ templ Template() {
 	</html>
 }
 ```
-&bull; Creează componenta de pagină principală: `resources/views/home/index.templ`
+&bull; Create your homepage component: `resources/views/home/index.templ`
 ```go
 package home
 
@@ -102,10 +101,10 @@ templ Index() {
 	}
 }
 ```
-Documentația templ pentru [componente copii este aici](https://templ.guide/syntax-and-usage/template-composition). Există un exemplu pentru o structură layout dar mie îmi place mai mult metoda cu componentă copil.
+Their documentation for [children components is here](https://templ.guide/syntax-and-usage/template-composition). They have an example for a layout structure but I find this method better.
 
-## Folosește componenta pagina principală în controller
-Am facut un fișier `app/http/controllers/controller.go` unde pot salva cateva funcții ajutătoare care vor fii accesibile din orice controller.
+## Use this homepage component in your controller
+I made this new file `app/http/controllers/controller.go` where I can store some helpers available to any controller.
 ```go
 package controllers
 
@@ -121,8 +120,8 @@ func RenderTempl(c http.Context, comp templ.Component) http.Response {
 	return nil
 }
 ```
-Funcția asta randează componenta templ în response buffer cu status http 200 Ok.
-Acum putem folosii funcția în `app/http/controllers/home_controller.go`
+This helper renders the provided templ component in the response buffer along with a 200 status header.
+Let's use it in `app/http/controllers/home_controller.go`
 ```go
 package controllers
 
@@ -146,7 +145,7 @@ func (r *HomeController) Index(ctx http.Context) http.Response {
 	return RenderTempl(ctx, home.Index())
 }
 ```
-Acum adaugăm o nouă rută:
+Now set this new route:
 ```go
 package routes
 
@@ -160,20 +159,18 @@ func Web() {
 	facades.Route().Get("/", homeController.Index)
 }
 ```
-
-## Configurare hot reloading folosind Air
-
-Goravel are deja configurația pentru Air în fișierul `.air.toml`, trebuie doar să adăugăm comanda `templ generate` în parametrul cmd, ca în exemplu:
+## Configure hot reloading with Air
+Goravel already comes with the configuration file (`.air.toml`) you need for this, we only need to add the `templ generate` command in the cmd parameter, like this:
 ```diff
 [build]
   bin = "./storage/temp/main"
 -  cmd = "go build -o ./storage/temp/main ."
 +  cmd = "templ generate && go build -o ./storage/temp/main ."
 ```
-Dacă lucrezi pe Windows adaugă `.exe` dupa cuvantul `main` și pentru parametrul `bin` și `cmd`:
+If you are using Windows add `.exe` to main in both `bin` and `cmd` parameters:
 ```toml
 [build]
   bin = "./storage/temp/main.exe"
   cmd = "templ generate && go build -o ./storage/temp/main.exe ."
 ```
-Gata ! Happy coding !
+Done ! Happy coding !
