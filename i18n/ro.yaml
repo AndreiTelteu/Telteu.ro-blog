@@ -1,0 +1,28 @@
+- id: last_mod_on
+  translation: Ultima modificare la {{ .Format "2006-01-02" }}
+- id: format_date
+  translation: '{{ .Format "2006-01-02" }}'
+- id: format_date_tosec
+  translation: '{{ .Format "2006-01-02" }}'
+- id: next_link
+  translation: Următorul
+- id: prev_link
+  translation: Precedent
+- id: no_newer_posts
+  translation: Niciun articol nou.
+- id: no_older_posts
+  translation: Niciun articol anterior.
+- id: comments_disabled
+  translation: Comentarii dezactivate.
+- id: comments_activate_js
+  translation: Activează JavaScript ca să vezi comentariile.
+- id: hugo_theme
+  translation: Temă Hugo
+- id: ported_from
+  translation: Portată de la
+- id: by
+  translation: făcută de
+- id: draft
+  translation: DRAFT
+- id: toc_title
+  translation: Conținut
