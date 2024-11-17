@@ -1,3 +1,47 @@
 baseURL = 'https://telteu.ro/'
-languageCode = 'en-us'
+languageCode = 'en'
+DefaultContentLanguage = "en"
 title = 'Andrei Telteu'
+copyright = "Andrei Telteu 2024"
+theme = "diary"
+
+[params]
+    subtitle = "Coding stuff"
+    enableGitalk = false
+    enableGiscus = true
+    # Twitter Card and Open Graph settings
+    enableOpenGraph = true
+    enableTwitterCards = true
+    title = "AndreiTelteu"
+    description = "Andrei Telteu dev blog"
+
+[params.giscus]
+    data_repo="AndreiTelteu/Telteu.ro-blog"
+    data_repo_id="R_kgDONQ0fTQ"    
+    data_category="Announcements"
+    data_category_id="DIC_kwDONQ0fTc4CkWo_"
+    data_mapping="pathname"
+    data_strict="1"
+    data_reactions_enabled="1"
+    data_emit_metadata="0"
+    data_input_position="bottom"
+    data_theme="preferred_color_scheme"
+    data_lang="en"
+    crossorigin="anonymous"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[[menu.main]]
+    url = "/categories/tutorials/"
+    name = "Tutorials"
+    weight = 1
+[[menu.main]]
+    url = "/tags"
+    name = "Tags"
+    weight = 3
+[[menu.main]]
+    url = "/index.xml"
+    name = "RSS Feed"
+    weight = 4
