@@ -1,10 +1,10 @@
 +++
-date = '2024-11-18T00:17:52+02:00'
+date = '2024-11-18T00:18:52+02:00'
 title = 'How to control a Noctua PWM fan from Raspberry Pi'
 description = 'How to control a Noctua NF-A20 PWM fan from Raspberry Pi. From OFF to 20%-100% speed'
 # featured_image = ''
-tags = ['python', 'raspberry-pi', 'homelab']
-categories = 'Tutorials'
+tags = ['python', 'raspberry-pi', 'homelab', 'tutorial']
+categories = 'Raspberry Pi'
 +++
 
 ![Noctua NF-A20 PWM fan](noctua-pwm-pi-ezgif.com-optimize.gif)

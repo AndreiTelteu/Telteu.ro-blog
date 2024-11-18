@@ -4,8 +4,8 @@ slug = 'cum-sa-folosesti-templ-in-goravel'
 title = 'Cum să folosești Templ în Goravel'
 description = 'Cum să folosești Templ în framework-ul Goravel'
 featured_image = 'templ-with-goravel.png'
-etichete = ['go', 'goravel', 'templ']
-categorii = 'Tutoriale'
+etichete = ['go', 'golang', 'goravel', 'templ', 'tutorial']
+categorii = 'GoLang'
 +++
 
 

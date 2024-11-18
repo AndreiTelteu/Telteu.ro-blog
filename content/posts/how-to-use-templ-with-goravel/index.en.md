@@ -3,8 +3,8 @@ date = '2024-11-18T00:17:52+02:00'
 title = 'How to Use Templ With Goravel'
 description = 'How to use Templ with Goravel go framework'
 featured_image = 'templ-with-goravel.png'
-tags = ['go', 'goravel', 'templ']
-categories = 'Tutorials'
+tags = ['go', 'golang', 'goravel', 'templ', 'tutorial']
+categories = 'GoLang'
 +++
 
 

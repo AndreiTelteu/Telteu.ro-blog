@@ -97,5 +97,8 @@ theme = "diary"
     lineNos = true
     lineNumbersInTable = false
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [outputs]
     home = ['HTML', 'RSS', 'SearchIndex']
