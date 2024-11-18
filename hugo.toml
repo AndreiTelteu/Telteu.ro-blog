@@ -96,6 +96,7 @@ theme = "diary"
 [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
+    style = "native"
 
 [markup.goldmark.renderer]
     unsafe= true
