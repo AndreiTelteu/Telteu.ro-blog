@@ -7,6 +7,6 @@ docker run -it \
     -v ${PWD}:/src \
     -v ${PWD}/hugo_cache:/tmp/hugo_cache \
     --entrypoint /bin/sh \
-    hugomods/hugo:exts \
+    hugomods/hugo:ci \
     build.sh
 
