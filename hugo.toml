@@ -28,6 +28,9 @@ theme = "diary"
     title = "AndreiTelteu"
     description = "Andrei Telteu dev blog"
 
+[params.code_block_panel]
+    max_lines = 200
+
 [params.giscus]
     data_repo="AndreiTelteu/Telteu.ro-blog"
     data_repo_id="R_kgDONQ0fTQ"    
@@ -79,3 +82,13 @@ theme = "diary"
     url = "/ro/index.xml"
     name = "Feed RSS"
     weight = 4
+
+[module]
+    [[module.imports]]
+        path = 'github.com/hugomods/code-block-panel'
+    [[module.imports]]
+        path = "github.com/hugomods/icons/vendors/bootstrap"
+
+[markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
