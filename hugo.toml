@@ -57,31 +57,49 @@ theme = "diary"
 
 [menu]
 [[menu.main]]
-    url = "/categories/tutorials/"
-    name = "Tutorials"
+    url = "/categories/devops/"
+    name = "DevOps"
     weight = 1
 [[languages.ro.menu.main]]
-    url = "/ro/categorii/tutoriale/"
+    url = "/ro/categorii/devops/"
     name = "Tutoriale"
     weight = 1
 
 [[menu.main]]
-    url = "/tags"
-    name = "Tags"
+    url = "/categories/golang/"
+    name = "GoLang"
+    weight = 2
+[[languages.ro.menu.main]]
+    url = "/ro/categorii/golang/"
+    name = "Tutoriale"
+    weight = 2
+
+[[menu.main]]
+    url = "/categories/raspberry-pi/"
+    name = "Raspberry Pi"
     weight = 3
 [[languages.ro.menu.main]]
-    url = "/ro/etichete"
-    name = "Etichete"
+    url = "/ro/categorii/raspberry-pi/"
+    name = "Tutoriale"
     weight = 3
+
+[[menu.main]]
+    url = "/categories/solid-js/"
+    name = "Solid JS"
+    weight = 4
+[[languages.ro.menu.main]]
+    url = "/ro/categorii/solid-js/"
+    name = "Tutoriale"
+    weight = 4
 
 [[menu.main]]
     url = "/index.xml"
     name = "RSS Feed"
-    weight = 4
+    weight = 5
 [[languages.ro.menu.main]]
     url = "/ro/index.xml"
     name = "Feed RSS"
-    weight = 4
+    weight = 5
 
 [module]
     [[module.imports]]
