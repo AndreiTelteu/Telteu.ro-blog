@@ -2,8 +2,13 @@
 {{ $content := (printf "%s%s" .Page.File.Dir $file) | readFile }}
 
 {{ $parts := split $content "+++" }} <!-- Split the content by "+++" -->
-{{ if ge (len $parts) 3 }} <!-- Ensure there are at least 3 parts -->
+{{ $parts2 := split $content "---" }} <!-- Split the content by "+++" -->
+{{ if ge (len $parts) 3 }}
     {{ $after := index $parts 2 }} <!-- Take the content after the second "+++" -->
+    {{ $cleaned := trim $after "\n" }} <!-- Trim any leading/trailing newlines -->
+    {{ $cleaned | safeHTML }} <!-- Render the cleaned content -->
+{{ else if ge (len $parts2) 3 }}
+    {{ $after := index $parts2 2 }} <!-- Take the content after the second "+++" -->
     {{ $cleaned := trim $after "\n" }} <!-- Trim any leading/trailing newlines -->
     {{ $cleaned | safeHTML }} <!-- Render the cleaned content -->
 {{ else }}
