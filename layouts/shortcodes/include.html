@@ -1,0 +1,12 @@
+{{ $file := .Get 0 }}
+{{ $content := (printf "%s%s" .Page.File.Dir $file) | readFile }}
+
+{{ $parts := split $content "+++" }} <!-- Split the content by "+++" -->
+{{ if ge (len $parts) 3 }} <!-- Ensure there are at least 3 parts -->
+    {{ $after := index $parts 2 }} <!-- Take the content after the second "+++" -->
+    {{ $cleaned := trim $after "\n" }} <!-- Trim any leading/trailing newlines -->
+    {{ $cleaned | safeHTML }} <!-- Render the cleaned content -->
+{{ else }}
+    {{ $content | safeHTML }} <!-- If no +++ delimiters are found, render the original content -->
+{{ end }}
+<!-- thanks chatgpt -->
