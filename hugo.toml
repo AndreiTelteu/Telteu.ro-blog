@@ -62,7 +62,7 @@ theme = "diary"
     weight = 1
 [[languages.ro.menu.main]]
     url = "/ro/categorii/devops/"
-    name = "Tutoriale"
+    name = "DevOps"
     weight = 1
 
 [[menu.main]]
@@ -71,7 +71,7 @@ theme = "diary"
     weight = 2
 [[languages.ro.menu.main]]
     url = "/ro/categorii/golang/"
-    name = "Tutoriale"
+    name = "GoLang"
     weight = 2
 
 [[menu.main]]
@@ -80,7 +80,7 @@ theme = "diary"
     weight = 3
 [[languages.ro.menu.main]]
     url = "/ro/categorii/raspberry-pi/"
-    name = "Tutoriale"
+    name = "Raspberry Pi"
     weight = 3
 
 [[menu.main]]
@@ -89,7 +89,7 @@ theme = "diary"
     weight = 4
 [[languages.ro.menu.main]]
     url = "/ro/categorii/solid-js/"
-    name = "Tutoriale"
+    name = "Solid JS"
     weight = 4
 
 [[menu.main]]
