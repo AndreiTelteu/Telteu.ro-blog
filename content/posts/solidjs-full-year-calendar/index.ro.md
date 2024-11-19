@@ -7,4 +7,7 @@ etichete = ['solid-js', 'js', 'snippet']
 categorii = 'Solid JS'
 +++
 
-{{% include "index.md" %}}
+
+```tsx
+{{% include "FullCalendar.tsx" %}}
+```
