@@ -1,5 +1,6 @@
 +++
-date = '2024-11-18T00:23:52+02:00'
+date = '2024-11-18T00:10:52+02:00'
+slug = 'docker-compose-helper-script'
 title = 'Docker Compose helper script'
 description = 'How to make a helper script to run docker compose commands'
 tags = ['docker', 'homelab', 'snippet']

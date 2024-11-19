@@ -1,5 +1,6 @@
 +++
-date = '2024-11-18T00:23:54+02:00'
+date = '2024-11-18T00:08:54+02:00'
+slug = 'mysql-dynamic-max-connections'
 title = 'MySQL dynamic max_connections setting'
 description = 'MySQL Dynamic max_connections based on active threads'
 tags = ['docker', 'mysql', 'snippet']

@@ -1,5 +1,6 @@
 +++
-date = '2024-11-18T00:22:52+02:00'
+date = '2024-11-18T00:09:52+02:00'
+slug = 'incremental-backup-files-and-mysql'
 title = 'Incremental file and MySQL backup'
 description = 'How to use setup Autorestic for incremental backups of files and MySQL database'
 tags = ['devops', 'infrastructure', 'autorestic']

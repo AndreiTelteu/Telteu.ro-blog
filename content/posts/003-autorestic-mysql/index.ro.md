@@ -1,5 +1,5 @@
 +++
-date = '2024-11-18T00:22:52+02:00'
+date = '2024-11-18T00:09:52+02:00'
 slug = 'backup-incremental-pentru-fisiere-si-mysql'
 title = 'Backup incremental pentru fișiere și MySQL'
 description = 'Cum să configurezi Autorestic pentru backup incremental de fișiere și baza de date MySQL'

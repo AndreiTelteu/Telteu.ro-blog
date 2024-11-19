@@ -1,5 +1,5 @@
 +++
-date = '2024-11-18T00:17:52+02:00'
+date = '2024-11-18T00:12:52+02:00'
 slug = 'cum-sa-folosesti-templ-in-goravel'
 title = 'Cum să folosești Templ în Goravel'
 description = 'Cum să folosești Templ în framework-ul Goravel'

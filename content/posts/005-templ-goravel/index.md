@@ -1,5 +1,6 @@
 +++
-date = '2024-11-18T00:17:52+02:00'
+date = '2024-11-18T00:12:52+02:00'
+slug = 'how-to-use-templ-with-goravel'
 title = 'How to Use Templ With Goravel'
 description = 'How to use Templ with Goravel go framework'
 featured_image = 'templ-with-goravel.png'

@@ -1,5 +1,6 @@
 +++
-date = '2024-11-18T00:18:52+02:00'
+date = '2024-11-18T00:14:52+02:00'
+slug = 'how-to-control-a-noctua-nf-a20-pwm-fan-from-raspberry-pi'
 title = 'How to control a Noctua PWM fan from Raspberry Pi'
 description = 'How to control a Noctua NF-A20 PWM fan from Raspberry Pi. From OFF to 20%-100% speed'
 # featured_image = ''
