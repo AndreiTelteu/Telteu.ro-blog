@@ -37,6 +37,11 @@
                                 <a href="{{ "/categories/" | relLangURL }}{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>
                                 &nbsp;
                         {{ end }}
+                        {{ if .Params.categorii }}
+                            <i class="material-icons">folder</i>
+                                <a href="{{ "/categorii/" | relLangURL }}{{ .Params.categorii | urlize }}">{{ .Params.categorii }}</a>
+                                &nbsp;
+                        {{ end }}
 
                         {{ if gt .Params.tags 0 }}
                             <i class="material-icons">label</i>
@@ -45,6 +50,14 @@
                                 &nbsp;
                             {{ end }}
                         {{ end }}
+                        {{ if gt .Params.etichete 0 }}
+                            <i class="material-icons">label</i>
+                            {{ range .Params.etichete }}
+                                <a href="{{ "/etichete/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                &nbsp;
+                            {{ end }}
+                        {{ end }}
+                        
                         {{ if .Site.Params.enableReadingTime }}
                             <i class="material-icons">schedule</i>
                             {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
