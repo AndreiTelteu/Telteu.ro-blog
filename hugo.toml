@@ -75,31 +75,40 @@ theme = "diary"
     weight = 2
 
 [[menu.main]]
+    url = "/categories/3d-print/"
+    name = "3D Print"
+    weight = 3
+[[languages.ro.menu.main]]
+    url = "/ro/categorii/3d-print/"
+    name = "3D Print"
+    weight = 3
+
+[[menu.main]]
     url = "/categories/raspberry-pi/"
     name = "Raspberry Pi"
-    weight = 3
+    weight = 4
 [[languages.ro.menu.main]]
     url = "/ro/categorii/raspberry-pi/"
     name = "Raspberry Pi"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     url = "/categories/solid-js/"
     name = "Solid JS"
-    weight = 4
+    weight = 5
 [[languages.ro.menu.main]]
     url = "/ro/categorii/solid-js/"
     name = "Solid JS"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     url = "/index.xml"
     name = "RSS Feed"
-    weight = 5
+    weight = 6
 [[languages.ro.menu.main]]
     url = "/ro/index.xml"
     name = "Feed RSS"
-    weight = 5
+    weight = 6
 
 [module]
     [[module.imports]]
