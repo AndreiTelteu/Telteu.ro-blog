@@ -4,6 +4,7 @@ slug = 'how-to-control-a-noctua-nf-a20-pwm-fan-from-raspberry-pi'
 title = 'How to control a Noctua PWM fan from Raspberry Pi'
 description = 'How to control a Noctua NF-A20 PWM fan from Raspberry Pi. From OFF to 20%-100% speed'
 featured_image = 'diagram.png'
+images = ['diagram.png']
 tags = ['python', 'raspberry-pi', 'homelab', 'tutorial']
 categories = 'Raspberry Pi'
 +++
