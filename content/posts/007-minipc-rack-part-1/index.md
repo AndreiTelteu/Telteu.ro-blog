@@ -4,6 +4,7 @@ slug = 'minipc-rack-part-1'
 title = 'MiniPC rack Part 1: the pc and case'
 description = 'Getting the hardware for the MiniPC rack'
 featured_image = 'minipcs-vertical.jpg'
+images = ['minipcs-vertical.jpg']
 tags = ['server', 'homelab', '3d-printing']
 categories = '3D Print'
 +++
