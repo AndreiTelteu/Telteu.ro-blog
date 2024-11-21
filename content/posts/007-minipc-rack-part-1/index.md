@@ -42,7 +42,7 @@ After a while I found a good deal on a 3D Printer and I started learning how to 
 
 I started searching around on [yeggi.com](https://www.yeggi.com/) (search engine for 3D models) for compatible cases for this MiniPC and I found the best one:
 
-[HP Mini Staggered Rack Mount by @dsluo_362876](https://www.printables.com/model/827617-hp-mini-staggered-rack-mount)
+["HP Mini Staggered Rack Mount" by @dsluo_362876](https://www.printables.com/model/827617-hp-mini-staggered-rack-mount)
 
 ![minipc case model image](minipc-case-model.jpg)
 
