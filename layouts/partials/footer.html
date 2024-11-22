@@ -29,3 +29,19 @@
 
 {{ partial "search/assets/js" . }}
 
+<script src="{{ "js/fancybox.js" | urlize | relURL }}"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll('a');
+        links.forEach(element => {
+            var href = element.getAttribute('href') || '';
+            console.log({href});
+            if (href.indexOf('youtube.com') !== -1 ||
+                href.match(/(jpe?g|png|gif|webp|bmp|svg|ico|pdf|mp4|webm)$/i)) {
+                element.classList.add('fancybox');
+            }
+        });
+        Fancybox.bind('.fancybox');
+    });
+</script>
+
