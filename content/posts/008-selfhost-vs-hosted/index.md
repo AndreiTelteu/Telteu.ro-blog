@@ -9,6 +9,8 @@ tags = ['startup', 'saas', 'selfhost']
 categories = 'Startup'
 +++
 
+> Featured image by ChatGPT/DALL-E
+
 I was watching this video on using a paid hosted version of an open-source software instead of self-hosting it:
 
 {{< youtube id="TkysPcpK0aQ" >}}
