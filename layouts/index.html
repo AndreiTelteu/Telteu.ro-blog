@@ -26,7 +26,7 @@
                             <div class="post-item-image-wrapper">
                                 <div class="post-item-image"
                                     {{ if $image }}
-                                        {{- $s := printf `%s?fill=230x180,center` ($image) -}}
+                                        {{- $s := printf `%s?fill=480x240,center` ($image) -}}
                                         {{- $s = partial "images/url" (dict "Filename" $s "Page" .Page) -}}
                                         {{ printf `style="background-image: url('%s');"` $s | safeHTMLAttr }}
                                     {{ else }}
