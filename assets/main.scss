@@ -27,6 +27,9 @@
     width: 1.3rem;
     height: 1.3rem;
 }
-.post-item-image {
+.post-list-container .post-item-image {
     object-fit: cover;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    height: 180px !important;
 }
