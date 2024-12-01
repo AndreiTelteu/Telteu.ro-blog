@@ -32,3 +32,8 @@
     margin-top: -20px;
     margin-bottom: -20px;
 }
+.stream-container .post .post-head-wrapper .post-title {
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .8) 30%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .8) 30%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 30%);
+}
