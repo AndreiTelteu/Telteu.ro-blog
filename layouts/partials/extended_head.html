@@ -3,4 +3,6 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 <link rel="stylesheet" href="{{ "css/fancybox.css" | urlize | relURL }}" />
 
-<script defer src="https://stats.onlinedigital.ro/script.js" data-website-id="4c13949a-8262-4494-a15b-5703dc635f3a"></script>
+{{ if hugo.IsProduction }}
+    <script defer src="https://stats.onlinedigital.ro/script.js" data-website-id="4c13949a-8262-4494-a15b-5703dc635f3a"></script>
+{{ end }}
