@@ -29,7 +29,7 @@
 
 {{ partial "search/assets/js" . }}
 
-<script src="{{ "js/fancybox.js" | urlize | relURL }}"></script>
+<script src="{{ "js/fancybox.js" | urlize | relURL }}" defer></script>
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
         var links = document.querySelectorAll('a');

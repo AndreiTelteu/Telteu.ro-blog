@@ -28,6 +28,10 @@ theme = "diary"
     title = "AndreiTelteu"
     description = "Andrei Telteu dev blog"
 
+[params.hugomods]
+    [params.hugomods.images]
+        modern_format = 'webp'
+
 [params.code_block_panel]
     max_lines = 200
 
