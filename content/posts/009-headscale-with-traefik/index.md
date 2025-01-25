@@ -2,7 +2,7 @@
 date = '2025-01-25T20:04:00+02:00'
 slug = 'headscale-with-traefik'
 title = 'How to configure Headscale and Traefik to proxy any service'
-description = ''
+description = 'Using headscale we can make a public proxy to any of our self-hosted services like Immich or nextcloud.'
 # featured_image = ''
 # images = ['']
 tags = ['devops', 'docker', 'selfhost', 'homelab']
